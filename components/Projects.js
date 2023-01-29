@@ -10,7 +10,7 @@ export default function Projects(){
                 I have worked on in the recent years. 
                 Please 
                 <span className={styles.contactme}> contact me </span>
-                 if you're interested 
+                 if you&apos;re interested 
                 in a longer list.
             </p>
 

@@ -7,7 +7,7 @@ export default function Contact(){
 
             <form action="" className={styles.form}>
                 <p>
-                    Don't hesitate to use the following form
+                    Don&apos;t hesitate to use the following form
                     if you have any questions or interesting 
                     projects for me.    
                 </p>

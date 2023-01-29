@@ -10,7 +10,9 @@ export default function Hero(){
                 <div className={styles.tiny}>
                     <Image src={"/images/tinydiamond.png"}
                     fill
-                    style={{objectFit:"cover"}}/>
+                    style={{objectFit:"cover"}}
+                    alt=""
+                    />
                 </div>
                 <p>Hi👋, I am Diego Lugo Bendezu,</p>
                 <h1>
@@ -27,6 +29,7 @@ export default function Hero(){
                 <Image src={"/images/diamonds.png"} 
                 fill
                 style={{objectFit:"contain"}}
+                alt=""
                 />
             </div>
 

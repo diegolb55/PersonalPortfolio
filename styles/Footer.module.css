@@ -1,0 +1,33 @@
+.footer {
+    /* border: 2px solid red; */
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+}
+.socials {
+    font-size: 2rem;
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrows {
+    /* border: 2px solid red; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.a1{
+    position: relative;
+    bottom: -6px;
+}
+.a2{
+    position: relative;
+    top: -6px;
+}

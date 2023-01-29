@@ -1,0 +1,27 @@
+.skills {
+    background: #372B2B;
+    border-radius: 30px;
+    height: 600px;
+    width: 70%;
+    max-width: 313px;
+
+    margin: 20px 0;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+.skills > p:nth-child(1){
+    flex-grow: .2;
+    padding: 25px;
+    font-size: 20px;
+
+}
+.skills > div {
+    border-top: 2px solid white;
+    flex-grow: .8;
+    padding: 20px;
+}

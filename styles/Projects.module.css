@@ -1,0 +1,41 @@
+
+.projects {
+    background: #372B2B;
+    border-radius: 30px;
+    width: 70%;
+    max-width: 313px;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+.contactme {
+    font-style: italic;
+    color: red;
+}
+
+.plist {
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.pbox {
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 150px;
+    
+    width: 200px;
+    margin: 20px auto;
+}
+
+@media screen and (min-width: 800px){
+    .projects {
+        width: 70%;
+        max-width: 588px;
+    }
+}

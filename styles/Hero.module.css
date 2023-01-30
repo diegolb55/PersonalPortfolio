@@ -9,20 +9,19 @@
 .tbox {
     /* border: 2px solid gray; */
     padding-top: 40px;
-    height: 270px;
     width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: relative;
 }
 .tiny{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     top: 30px;
     right: 0;
     height: 50px;
     width: 50px;
+}
+.tbox > h1, .tbox > h3 {
+    margin: 20px 0;
 }
 
 .highlight{
@@ -38,13 +37,12 @@
 
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     .hero{
         flex-direction: row;
         justify-content: space-around;
     }
     .tbox{
         font-size: 1.4rem;
-        height: 475px;
     }
 }

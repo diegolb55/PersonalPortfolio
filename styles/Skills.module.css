@@ -1,16 +1,17 @@
 .skills {
     background: #372B2B;
     border-radius: 30px;
-    height: 600px;
+    /* height: 600px; */
     width: 70%;
     max-width: 313px;
 
-    margin: 20px 0;
+    margin: 20px 30px;
 
     color: white;
 
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 15px 1px #fffcab28;
 
 
 }
@@ -21,7 +22,12 @@
 
 }
 .skills > div {
-    border-top: 2px solid white;
-    flex-grow: .8;
-    padding: 20px;
+    border-top: 2px solid #b18b8b;
+    padding: 40px 20px;
+}
+.skills > div > p:nth-child(1){
+    margin-bottom: 20px;
+}
+.skills > div > p:nth-child(2){
+    padding-left: 20px;
 }

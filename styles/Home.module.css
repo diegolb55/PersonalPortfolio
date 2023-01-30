@@ -9,13 +9,14 @@
   /* border: 5px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
   .sp{
     flex-direction: row;
+
   }
 }

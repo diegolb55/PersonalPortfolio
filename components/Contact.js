@@ -9,7 +9,10 @@ export default function Contact(){
                 <p>
                     Don&apos;t hesitate to use the following form
                     if you have any questions or interesting 
-                    projects for me.    
+                    projects for me.  
+
+                    <br/><br/>
+                    I usually reply within 24 hours.  
                 </p>
 
                 <div>

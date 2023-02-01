@@ -1,4 +1,5 @@
 import styles from "@/styles/Projects.module.css"
+import  PBox  from "@/components/subcomponents/PBox"
 
 export default function Projects(){
 
@@ -15,10 +16,11 @@ export default function Projects(){
             </p>
 
             <div className={styles.plist}>
-                <div className={styles.pbox}></div>
-                <div className={styles.pbox}></div>
-                <div className={styles.pbox}></div>
-                <div className={styles.pbox}></div>
+                <PBox/>
+                <PBox/>
+                <PBox/>
+                <PBox/>
+
 
             </div>
         </div>

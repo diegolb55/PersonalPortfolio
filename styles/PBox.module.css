@@ -1,0 +1,8 @@
+.pbox {
+    border: 2px solid #b18b8b;
+    border-radius: 25px;
+    height: 150px;
+    
+    width: 200px;
+    margin: 20px auto;
+}

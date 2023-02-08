@@ -1,17 +1,18 @@
 import styles from "@/styles/Hero.module.css"
 import Image from 'next/image'
 import { motion } from "framer-motion"
+import Magic from "./Magic"
 
 export default function Hero(){
 
     
     const variant = {
      
-        color:{
+        textcolor:{
             color: ["rgba(133,164,220,1)", "rgba(207, 220, 133, 1)"],
-            
             transition: {
-                yoyo: Infinity,
+                repeat: Infinity,
+                repeatType: 'reverse',
                 duration: 5
             } 
         }
@@ -33,25 +34,29 @@ export default function Hero(){
                     Software Engineering <br/>student.
                 </h1>
                 <h3>
-                    I <motion.span className={styles.highlight}
-                    
-                            animate={"color"}
-                            variants={variant}
-
-                            >design</motion.span> and 
-                            <motion.span className={styles.highlight} animate={"color"}
-                            variants={variant}> code </motion.span> pleasant <br/> things.
-                    I <motion.span className={styles.highlight} animate={"color"}
-                            variants={variant}> love </motion.span> what I do. 
-                </h3>
+                    I 
+                    <motion.span className={styles.highlight}
+                        animate={"textcolor"}
+                        variants={variant}> design </motion.span>
+                    and 
+                    <motion.span className={styles.highlight} 
+                        animate={"textcolor"}
+                        variants={variant}> code </motion.span>
+                    pleasant <br/> things. I 
+                    <motion.span className={styles.highlight} 
+                        animate={"textcolor"}
+                        variants={variant}> love </motion.span> 
+                    what I do. 
+            </h3>
             </div>
 
             <div className={styles.canvas}>
-                <Image src={"/images/diamonds.png"} 
+                {/* <Image src={"/images/diamonds.png"} 
                 fill
                 style={{objectFit:"contain"}}
                 alt=""
-                />
+                /> */}
+                <Magic/>
             </div>
 
         </div>

@@ -19,7 +19,7 @@ export default function Magic(){
         <Canvas>
             <CameraControls/>
 
-            <PerspectiveCamera makeDefault fov={75} position={[0, 0, 5]} />
+            <PerspectiveCamera makeDefault fov={75} position={[0, 0, 5.5]} />
 
             <Figures />
             <Lighting />
@@ -45,17 +45,17 @@ const Figures = (props) => {
 
 
     const positions = useRef([
-        [[2, 2, 0], [0, 0, 0]],
-        [[-2, 2, -2], [0, 0, 0]],
-        [[-3, -2, -3], [0, 0, 0]],
-        [[1, -4, -6], [0, 0, 0]],
-        [[3, -1, -4], [0, 0, 0]],
+        [-2, 2, 0],
+        [0, 2, 0],
+        [2, 2, 0],
 
-        [[0, 4, -15], [0, 0, 0]],
-        [[-3, 0, -12], [0, 0, 0]],
-        [[0, -3, -28], [0, 0, 0]],
-        [[4, 3, -32], [0, 0, 0]],
-        [[1, 2, -36], [0, 0, 0]],
+        [-2, 0, 0],
+        [0, 0, 0],
+        [2, 0, 0],
+
+        [-2, -2, 0],
+        [0, -2, 0],
+        [2, -2, 0],
     ])
 
 
@@ -67,7 +67,7 @@ const Figures = (props) => {
         positions?.current.map(
             ( elem ) => 
                 objects.push(
-                    <mesh key={Math.random()} position={elem[0]}>
+                    <mesh key={Math.random()} position={elem}>
                         <octahedronGeometry attach="geometry" />
                         <meshStandardMaterial attach="material" color="grey" transparent />
                     </mesh>
@@ -79,13 +79,14 @@ const Figures = (props) => {
 
     useFrame(({clock}) => {
 
-        const speed1 = Math.sin(clock.getElapsedTime() / 8) * 16;
-        const speed2 = Math.sin(clock.getElapsedTime() / 4) * 4;
+        const speed1 = Math.sin(clock.getElapsedTime() / 20) * 8;
+        const speed2 = Math.sin(clock.getElapsedTime() / 1) * 1;
 
         
 
-        // group.current.rotation.z = speed1 / 4;
-        for (let i=0; i < 10; i++){
+        group.current.rotation.z = speed1;
+
+        for (let i=0; i < 9; i++){
 
             if (i % 2 === 0){
                 group.current.children[i].rotation.y = speed2;
@@ -93,9 +94,7 @@ const Figures = (props) => {
                 group.current.children[i].rotation.y = speed1;
 
             }
-
-          
-
+            group.current.children[i].rotation.z = speed1 / -1;
 
         }
     })

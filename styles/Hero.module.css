@@ -1,6 +1,6 @@
 .hero {
     /* border: 2px solid red; */
-    padding: 0 40px;
+    /* padding: 0 40px; */
     display: flex;
     flex-direction: column;
     
@@ -8,7 +8,8 @@
 
 .tbox {
     /* border: 2px solid gray; */
-    padding-top: 40px;
+    padding: 40px 40px 0;
+    
     width: fit-content;
     position: relative;
 }

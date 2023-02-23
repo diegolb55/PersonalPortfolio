@@ -1,0 +1,9 @@
+
+.rinfo {
+    border: 2px solid red;
+    padding: 0 10px;
+}
+.rinfo > h3 {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}

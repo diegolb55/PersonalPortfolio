@@ -4,7 +4,7 @@ import { IoTriangleOutline } from "react-icons/io5"
 import { useRef } from "react"
 import Link from "next/link"
 
-export default function Footer(){
+export default function Footer({contrast}){
 
     const goToTop = () => {
         if( typeof window !== 'undefined'){
@@ -20,15 +20,15 @@ export default function Footer(){
         <div className={styles.footer}>
             <div className={styles.socials}>
                 <Link href={"https://github.com/diegolb55"}>
-                    <BsGithub />
+                    <BsGithub style={contrast ? {color: "black"} : {color: "white"}}/>
                 </Link>
                 <Link href={"https://www.linkedin.com/in/diegolugobd/"}>
-                    <BsLinkedin />
+                    <BsLinkedin style={contrast ? {color: "black"} : {color: "white"}}/>
                 </Link>
             </div>
             <div className={styles.arrows} >
-                <IoTriangleOutline className={styles.a1} onClick={()=>goToTop()}/>
-                <IoTriangleOutline className={styles.a2} onClick={()=>goToTop()}/>
+                <IoTriangleOutline className={styles.a1} onClick={()=>goToTop()} style={contrast ? {color: "black"} : {color: "white"}}/>
+                <IoTriangleOutline className={styles.a2} onClick={()=>goToTop()} style={contrast ? {color: "black"} : {color: "white"}}/>
             </div>
         </div>
 

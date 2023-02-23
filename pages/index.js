@@ -40,7 +40,7 @@ export default function Home() {
         {/* Contact */}
         <Contact />
         {/* Footer links */}
-        <Footer/>
+        <Footer />
       
       </main>
     </>

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    color: white;
+    /* color: white; */
 }
 .socials {
     font-size: 2rem;

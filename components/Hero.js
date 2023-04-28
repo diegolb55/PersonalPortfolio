@@ -56,7 +56,7 @@ export default function Hero(){
                 style={{objectFit:"contain"}}
                 alt=""
                 /> */}
-                <Magic/>
+                {/* <Magic/> */}
             </div>
 
         </div>

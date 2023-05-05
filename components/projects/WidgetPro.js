@@ -17,7 +17,7 @@ export default function WidgetPro(props){
     const {
         isOpen, name, openWidget, 
         background,
-        height, width, maxwidth,
+        height, width, maxwidth, 
         children } = props;
     
 
@@ -102,6 +102,7 @@ export default function WidgetPro(props){
             width: "100vw",
             maxWidth: "none",
 
+
             position: "fixed",
             top: [currentPos.current.top, 0],
             left: [currentPos.current.left, 0],
@@ -112,6 +113,7 @@ export default function WidgetPro(props){
             height: height,
             width: width,
             maxWidth: wopen ? "none" : ( maxwidth ? maxwidth: 250 ),
+
             position: wopen ? "fixed" : "relative",
             top: wopen ? [0, currentPos.current.top] : [0, 0],
             left: wopen ? [0, currentPos.current.left] : [0, 0],
@@ -162,8 +164,10 @@ export default function WidgetPro(props){
                     animate={{
                         background: isOpen ? background[1] : background[0],
                         borderRadius: isOpen ? 0 : 15,
+                        border: isOpen ? "none" : "2px solid gray",
                         // boxShadow: isOpen ? "none" : "2px -2px 15px 2px rgba(114,196,145,0.75)",
-                        overflow: isOpen ? "scroll" : "hidden"
+                        overflow: isOpen ? "scroll" : "hidden",
+                       
 
                     }}
                     onClick={ () => {

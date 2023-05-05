@@ -18,21 +18,24 @@ export default function Project1({ widgetControl, openWidget, data}){
             height={150}
             width={"40vw"}
             maxwidth={200}
-            background={["black", "gray"]}
+            background={["transparent", "gray"]}
         >
+
+            <p className={styles.title}>{data?.name}</p>
+            <p className={styles.description}>{data?.description}</p>
+{/* 
             <ClosedContent isOpen={widgetControl?.current[`${data?.name}`]} 
             >
                 <div className={styles.closedContent}>
-                    <h3>{ data?.name }</h3>
                 </div>      
-            </ClosedContent>
+            </ClosedContent> */}
            
             <OpenContent isOpen={widgetControl?.current[`${data?.name}`]} >
                 <div className={styles.openContent}>
                     <p onClick={(e)=> {
-                        e.stopPropagation();
-                        openWidget(data.name, false);
-                    }}>{ data?.name }</p>
+                            e.stopPropagation();
+                            openWidget(data.name, false);
+                    }}>exit</p>
                 </div>  
             </OpenContent>
         </WidgetPro>

@@ -1,7 +1,7 @@
 export const ProjectData = {
     project1:{
         name:"project1",
-        description:"",
+        description:"description phrase",
         situation:"",
         task:"",
         action:"",
@@ -10,7 +10,7 @@ export const ProjectData = {
     },
     project2:{
         name:"project2",
-        description:"",
+        description:"description phrase",
         situation:"",
         task:"",
         action:"",
@@ -19,7 +19,7 @@ export const ProjectData = {
     },
     project3:{
         name:"project3",
-        description:"",
+        description:"description phrase",
         situation:"",
         task:"",
         action:"",
@@ -28,7 +28,7 @@ export const ProjectData = {
     },
     project4:{
         name:"project4",
-        description:"",
+        description:"description phrase",
         situation:"",
         task:"",
         action:"",

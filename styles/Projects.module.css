@@ -23,12 +23,20 @@
 }
 
 .plist {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    max-width: 550px;
-    margin: 0 auto;
+    flex-direction: column;
+}
+.pbox {
+    border:2px solid white;
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -36,5 +44,14 @@
     .projects {
         width: 70%;
         max-width: 588px;
+    }
+   
+}
+@media screen and (max-width: 800px){
+
+    .plist {
+        border: 2px solid blue;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

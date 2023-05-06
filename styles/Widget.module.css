@@ -21,11 +21,9 @@
 
 
 .widget {
-    /* border: 5px solid black; */
-
     height: 100%;
     width: 100%;
-    top: 0
+    top: 0;
 }
 
 .widget::-webkit-scrollbar {

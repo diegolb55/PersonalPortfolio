@@ -44,7 +44,7 @@ export default function WidgetPro(props){
     const widget = useRef();
 
     /**
-     *  Null check and validation for widget ref
+     *  Null check and validation for widget cover ref
      * if isOpen, then get element dimensions in relation
      * to browser window
      * 
@@ -97,7 +97,7 @@ export default function WidgetPro(props){
     let cvariants = {
         open:{
             zIndex: 11,
-            background: background[1],
+            // background: background[1],
             height: windowH,
             width: "100vw",
             maxWidth: "none",
@@ -109,7 +109,7 @@ export default function WidgetPro(props){
         },
         closed:{
             zIndex : wopen ? 11 : 10,
-            background: "transparent",
+            // background: "transparent",
             height: height,
             width: width,
             maxWidth: wopen ? "none" : ( maxwidth ? maxwidth: 250 ),
@@ -160,12 +160,12 @@ export default function WidgetPro(props){
                 
                 ref={widget}  
             >
-                <motion.div className={`${styles.widget} ${ styles.absolute }`} // ${ styles.absolute }
+                <motion.div className={`${styles.widget} ${ styles.relative }`} // ${ styles.absolute }
                     animate={{
                         background: isOpen ? background[1] : background[0],
                         borderRadius: isOpen ? 0 : 15,
                         border: isOpen ? "none" : "2px solid gray",
-                        // boxShadow: isOpen ? "none" : "2px -2px 15px 2px rgba(114,196,145,0.75)",
+                        boxShadow: isOpen ? "none" : "2px -2px 15px 2px rgba(114,196,145,0.75)",
                         overflow: isOpen ? "scroll" : "hidden",
                        
 

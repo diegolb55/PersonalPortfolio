@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import  {useRef, useEffect} from 'react'
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Skills from '@/components/Skills'
@@ -11,6 +12,9 @@ import Footer from '@/components/Footer'
 
 
 export default function Home() {
+
+  const containerRef = useRef(null);
+
   return (
     <>
       <Head>
@@ -20,20 +24,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <NavBar containerRef={containerRef}/>
+        
 
-        {/* Nav bar */}
-        <NavBar />
-        {/*  Hero Section : info content, canvasx2*/}
-
-        {/* <Hero />
-        <div className={styles.sp}>
-          <Skills />
-          <Projects />
-        </div>
-        <Contact />
-        <Footer /> */}
-
-        <div className={styles.container}>
+        <div className={styles.container} ref={containerRef}>
           <section className={styles.section}>
             {/* Content for the first section */}
             {/* <Hero /> */}

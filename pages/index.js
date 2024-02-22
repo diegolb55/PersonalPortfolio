@@ -24,24 +24,34 @@ export default function Home() {
         {/* Nav bar */}
         <NavBar />
         {/*  Hero Section : info content, canvasx2*/}
-        <Hero />
 
-
+        {/* <Hero />
         <div className={styles.sp}>
-          {/* Tech Skills */}
           <Skills />
-          {/* Projects */}
           <Projects />
         </div>
-
-
-
-
-        {/* Contact */}
         <Contact />
-        {/* Footer links */}
-        <Footer />
-      
+        <Footer /> */}
+
+        <div className={styles.container}>
+          <section className={styles.section}>
+            {/* Content for the first section */}
+            {/* <Hero /> */}
+          </section>
+          <section className={styles.section}>
+            {/* Content for the second section */}
+            {/* <Hero /> */}
+          </section>
+          <section className={styles.section}>
+            {/* Content for the first section */}
+            {/* <Hero /> */}
+          </section>
+          <section className={styles.section}>
+            {/* Content for the second section */}
+            {/* <Hero /> */}
+          </section>
+        </div>
+
       </main>
     </>
   )

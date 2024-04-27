@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import PanoramaViewer from '@/components/PanoramaViewer'
 
 
 
@@ -25,26 +26,23 @@ export default function Home() {
 
       <main className={styles.main}>
         <NavBar containerRef={containerRef}/>
-        
+        <PanoramaViewer />
 
-        <div className={styles.container} ref={containerRef}>
+
+        {/* <div className={styles.container} ref={containerRef}>
           <section className={styles.section}>
-            {/* Content for the first section */}
-            {/* <Hero /> */}
+            <Hero />
           </section>
           <section className={styles.section}>
-            {/* Content for the second section */}
-            {/* <Hero /> */}
+            <PanoramaViewer />
           </section>
           <section className={styles.section}>
-            {/* Content for the first section */}
-            {/* <Hero /> */}
+           
           </section>
           <section className={styles.section}>
-            {/* Content for the second section */}
-            {/* <Hero /> */}
+          
           </section>
-        </div>
+        </div> */}
 
       </main>
     </>
